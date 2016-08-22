@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to('Sandboxes', sandboxes_path) %>
+      <%= link_to('Widgets', widgets_path) %>
+    </nav>
+    <% flash.each do |key, message| %>
+      <p<%= flash_style(key) %>><%= "#{key.capitalize}: #{message}" %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

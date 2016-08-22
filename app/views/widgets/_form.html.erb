@@ -1,0 +1,4 @@
+<%= form_tag('/widgets', :method => :post) do %>
+  <%= text_field_tag('widget[foo][bar]') %>
+  <%= submit_tag('Submit') %>
+<% end %>

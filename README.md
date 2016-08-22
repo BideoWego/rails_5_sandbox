@@ -1,24 +1,15 @@
-# README
+# Rails 5 Sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+[Rails 5 CHANGELOG](http://weblog.rubyonrails.org/2016/6/30/Rails-5-0-final/)
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+

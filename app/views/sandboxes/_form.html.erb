@@ -1,0 +1,4 @@
+<%= form_tag('/sandboxes', :method => :post) do %>
+  <%= text_field_tag('sandbox[foo][bar]') %>
+  <%= submit_tag('Submit') %>
+<% end %>
