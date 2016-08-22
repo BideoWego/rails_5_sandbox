@@ -1,10 +1,8 @@
 <h1>Widgets Index</h1>
 
-<h2><%= @message %></h2>
-
-<%= render :partial => 'form' %>
-<%= render :partial => 'form' %>
-<%= render :partial => 'form' %>
+<% @widgets.each do |widget| %>
+  <h2><%= link_to(widget.name, widget) %></h2>
+<% end %>
 
 
 

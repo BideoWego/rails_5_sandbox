@@ -1,18 +1,30 @@
 class WidgetsController < ApplicationController
-  per_form_csrf_tokens = true
+  before_action :set_widget, :except => [:index, :new, :create]
 
 
   def index
-    @message = helpers.foobar_helper_method
+    @widgets = Widget.all
   end
 
 
-  def create
-    if value = params.dig(:widget, :foo, :bar)
-      flash[:success] = value
-    else
-      flash[:error] = 'Oops!'
+  def show
+  end
+
+
+
+  private
+  def set_widget
+    @widget = Widget.find_by_id(params[:id])
+    unless @widget
+      flash[:error] = 'Widget not found'
+      redirect_back
     end
-    redirect_to widgets_path
+  end
+
+
+  def widget_params
+    params.require(:widget).permit(
+      :name
+    )
   end
 end
