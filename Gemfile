@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-  gem 'hirb'
+  gem 'jazz_fingers'
+  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec'
